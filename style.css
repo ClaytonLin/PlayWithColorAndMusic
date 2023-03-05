@@ -1,0 +1,231 @@
+#key {
+	width: 100%;
+	height: 100%;
+	background-color: red;
+	color: rgba(0, 0, 0, 0);
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+	z-index: 999;
+}
+
+.playing {
+    background-color: transparent;
+    color: transparent;
+}
+
+body {
+	background-color: #111;
+  }
+
+.playing-stop {
+    background-color: black;
+  }
+
+.key{
+	color:rgba(0, 0, 0, 0) ;
+}
+
+.verticalLine {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+}
+
+.verticalLine1{
+	background: linear-gradient(to right, #245953, #2c1657);
+	width: 20vw;
+	height: 100vh;
+	top: -100vh;
+	position: absolute;
+	animation: colorChange 3s ease-in-out infinite, verticalLineAnimation 1s linear;
+	animation-delay: 0s;
+	animation-fill-mode: forwards
+}
+
+.verticalLine2{
+	background: linear-gradient(to right, #8d5b26, #731c37);
+	width: 20vw;
+	height: 100vh;
+	position: absolute;
+	left: 20vw;
+	top: -100vh;
+	animation: colorChange 3s ease-in-out infinite, verticalLineAnimation 1s linear;
+	animation-delay: 0.25s;
+	animation-fill-mode: forwards
+}
+
+.verticalLine3{
+	background: linear-gradient(to right, #40246e, #bb142f);
+	width: 20vw;
+	height: 100vh;
+	position: absolute;
+	left: 40vw;
+	top: -100vh;
+	animation: colorChange 3s ease-in-out infinite, verticalLineAnimation 1s linear;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards
+}
+
+.verticalLine4{
+	background: linear-gradient(to right, #8c4993, #ede9e5);
+	width: 20vw;
+	height: 100vh;
+	position: absolute;
+	left: 60vw;
+	top: -100vh;
+	animation: colorChange 3s ease-in-out infinite, verticalLineAnimation 1s linear;
+	animation-delay: 0.75s;
+	animation-fill-mode: forwards
+}
+
+.verticalLine5{
+	background: linear-gradient(to right, #f2da4f, #731c37);
+	width: 20vw;
+	height: 100vh;
+	position: absolute;
+	left: 80vw;
+	top: -100vh;
+	animation: colorChange 3s ease-in-out infinite, verticalLineAnimation 1s linear;
+	animation-delay: 1s;
+	animation-fill-mode: forwards
+}
+
+@keyframes colorChange {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes verticalLineAnimation {
+    from {
+        top: -100vh;
+    }
+    to {
+        top: 0vh;
+    }
+
+}
+
+@keyframes verticalLineAnimationQ {
+    from {
+        top: -100vh;
+    }
+    to {
+        top: 100vh;
+    }
+
+}
+
+@keyframes verticalLineAnimationA{
+	from {
+        top: 100vh;
+    }
+    to {
+        top: -100vh;
+    }
+}
+
+
+
+.animationQ{
+	position: absolute;
+	z-index: 100;
+	width: 75vw;
+	height: 75vh;
+	top:15vh;
+	background-color:white;
+	mix-blend-mode: difference;
+	opacity: 0;
+}
+
+.animationE{
+	position: absolute;
+	z-index: 50;
+	width: 100vw;
+	height: 100vh;
+	opacity: 0;
+	transition: 0.25s;
+}
+
+.animationS1{
+	position: absolute;
+	left: 25vw;
+	top: 20vh;
+	z-index: 78;
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	background: linear-gradient(to right, #40246e, #bb142f);
+	animation: colorChange 3s ease-in-out infinite;
+	opacity: 0;
+}
+
+.animationS2{
+	position: absolute;
+	left: 35vw;
+	top: 20vh;
+	z-index: 79;
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	background: linear-gradient(to right, #40246e, #bb142f);
+	animation: colorChange 3s ease-in-out infinite;
+	opacity: 0;
+}
+.animationS3{
+	position: absolute;
+	left: 45vw;
+	top: 20vh;
+	z-index: 80;
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	background: linear-gradient(to right, #40246e, #bb142f);
+	animation: colorChange 3s ease-in-out infinite;
+	opacity: 0;
+}
+
+.triangle-up {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 500px solid transparent;
+	border-right: 500px solid transparent;
+	border-bottom: 800px solid orange;
+	z-index: 150;
+	left: 20vw;
+	top: 2vh;
+	mix-blend-mode: difference;
+	opacity: 0%;
+  }
+
+.animationG{
+	position: absolute;
+	left: 26vw;
+	top: 20vh;
+	width: 800px;
+	height: 300px;
+	background: linear-gradient(to right, rgba(64, 36, 110,1),rgba(230, 192, 225, 0.2));
+	opacity: 0%;
+	z-index: 140;
+}
+
+.animationT{
+	position: absolute;
+	left: 26vw;
+	top: 20vh;
+	width: 800px;
+	height: 300px;
+	background: linear-gradient(to right, rgba(64, 36, 110,1),rgba(230, 192, 225, 0.2));
+	opacity: 0%;
+	z-index: 140;
+}
+
+  
+
